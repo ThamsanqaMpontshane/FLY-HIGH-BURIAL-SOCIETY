@@ -1,12 +1,4 @@
-/* .box {
-    padding: 0.75em;
-    border-radius : 0.5em;
-    border : 1px solid #ddd;
-    height: auto;
-    margin-bottom: 1em; */
-    /* background-color: #566E3D; */
-    
-  /* } */
+
 
   table, th, tr, td{
     border: 1px solid black;
@@ -18,16 +10,6 @@
         background-color: green;
     }
     
-
-/* nav ul li {
-        display: inline-block;
-        list-style: none;
-        color: white;
-        margin: 10px 20px;
-        padding: 10px 25px;
-        border-top-color: #704b4b;
-        border-radius: 65px;
-    } */
 .menu {
         background-color: rgb(40, 90, 44);
         text-decoration: none;
@@ -50,7 +32,7 @@
     justify-content: space-between;
 }
 .casket{
-    display: flex;
+    /* display: flex; */
     flex-direction: start;
 }
 .navHeading{
@@ -59,4 +41,20 @@
 }
 h2{
     color: white;
+}
+
+
+
+
+.box222{
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+footer{
+    background-color: rgb(40, 90, 44);
+    text-decoration: none;
+    text-align: center;
 }

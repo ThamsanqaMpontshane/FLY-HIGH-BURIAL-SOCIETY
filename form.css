@@ -1,0 +1,31 @@
+.box {
+    padding: 0.75em;
+    border-radius: 0.5em;
+    border: 1px solid #ddd;
+    height: auto;
+    margin-bottom: 1em;
+    width: 30%;
+
+    /* background-color: #566E3D;  */
+
+}
+
+input {
+    float: right;
+}
+.menu {
+    background-color: rgb(40, 90, 44);
+    text-decoration: none;
+    text-align: center;
+}
+.casket{
+    /* display: flex; */
+    flex-direction: start;
+}
+.navHeading{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    color: white;
+}
