@@ -18,14 +18,8 @@
         background-color: green;
     }
     
-nav {
-        /* width: 84%; */
-        /* margin: auto; */
-        /* padding-top: 45px; */
-        /* padding-left: 8%; */
-        /* padding-right: 8%; */
-    }
-nav ul li {
+
+/* nav ul li {
         display: inline-block;
         list-style: none;
         color: white;
@@ -33,7 +27,7 @@ nav ul li {
         padding: 10px 25px;
         border-top-color: #704b4b;
         border-radius: 65px;
-    }
+    } */
 .menu {
         background-color: rgb(40, 90, 44);
         text-decoration: none;
@@ -49,4 +43,20 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.casket{
+    display: flex;
+    flex-direction: start;
+}
+.navHeading{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    color: white;
 }
