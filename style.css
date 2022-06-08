@@ -210,3 +210,23 @@ footer {
 h3{
     text-align: center;
 }
+.btn{
+    text-align: center;
+background-color: #3f5a36;
+padding: 10px 20px;
+border-radius: 5px;
+color: white;
+}
+.button{
+background-color: rgb(27, 114, 85);
+color: white;
+}
+.btns{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btns a{
+    text-decoration: none;
+}
