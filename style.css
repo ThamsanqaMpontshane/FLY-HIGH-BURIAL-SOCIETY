@@ -1,6 +1,10 @@
 body {
   margin: 0;
 }
+.graph{
+  float:right;
+  margin-top: -10%;
+}
 entry {
   background-color:white;
   margin: 10px;
