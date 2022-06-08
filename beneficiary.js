@@ -13,5 +13,5 @@ We can offer you more than this, you can add up to 10 family members ad reasonab
 Please feel free to add your beneficiaries should anything happen to them, they will be covered.`
 msg.innerHTML= message;
 
-{/* <button class="button"><a href="index.html"></a>Home</button>
-<button class="button"><a href="index.html"></a>Add Beneficiary</button> */}
+//  { <button class="button"><a href="index.html"></a>Home</button>
+// <button class="button"><a href="index.html"></a>Add Beneficiary</button> }
