@@ -21,5 +21,5 @@ Please feel free to add your beneficiaries should anything happen to them, they 
 
 
 
-{/* <button class="button"><a href="index.html"></a>Home</button>
-<button class="button"><a href="index.html"></a>Add Beneficiary</button> */}
+//  { <button class="button"><a href="index.html"></a>Home</button>
+// <button class="button"><a href="index.html"></a>Add Beneficiary</button> }
