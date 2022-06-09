@@ -51,13 +51,18 @@ function addEntries(myObject) {
     }
 
     // get first 6 digits as a valid date
-    var tempDate = new Date(idNumber.toString().substring(0, 2), idNumber.toString().substring(2, 4) - 1, idNumber.toString().substring(4, 6));
+    const yr = idNr.value.substring(0, 2);
+    var tempDate = new Date(yr, idNumber.toString().substring(2, 4) - 1, idNumber.toString().substring(4, 6));
+    console.log({yr}, '-----', Number(yr) + 2000, {tempDate}) // 01 - 2001 = 1901
+    // yr 00 and 30 + 100
 
     var id_date = Number(tempDate.getDate());
     var id_month = Number(tempDate.getMonth());
-    var id_year = Number(tempDate.getFullYear());
+    var id_year = Number(tempDate.getFullYear()) > 1940 ? Number(tempDate.getFullYear()) : Number(yr) + 2000;
     // var fullDate = id_date + "-" + (id_month + 1) + "-" + id_year;
     var fullDate = id_year + "-" + (id_month + 1) + "-" + id_date;
+
+    console.log({id_year}, 'ii');
     // var fullDate=Number(fullDate1)
     
     if (!((tempDate.getYear() == idNumber.toString().substring(0, 2)) && (id_month == idNumber.toString().substring(2, 4) - 1) && (id_date == idNumber.toString().substring(4, 6)))) {
