@@ -9,6 +9,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 
@@ -71,6 +72,7 @@
         <input type="text" class="idnr" value="">
         
         <button class="btn">Add member</button>
+        <button class="viz" onclick="Graph();">Visualize</button>
         <hr>
         <div class="data">
 
@@ -85,9 +87,9 @@
                         <th>Age</th>
                         <th>Gender</th>
                         <th>Claim as from...</th>
-                        <th>Member from</th>
+                        <!-- <th>Member from</th> -->
                     </tr>
-                    <tr>
+                    <!-- <tr>
                       <td>Mila Nkunzi</td>
                       <td>0123438377838</td>
                       <td>12</td>
@@ -110,7 +112,7 @@
                       <td>Male</td>
                       <td>01/August/2019</td>
                       <td>2010</td>
-                    </tr>
+                    </tr> -->
                 </thead>
 
             </table>
@@ -121,42 +123,16 @@
 
          </div>
     </div> 
+    
 
-    <canvas id="myChart" class="graph" style="width:100%;max-width:600px"></canvas>
+  
 
-<script>
-var xValues = [" 20 - 30 years", "30 - 40 years","40 - 50 years"];
-var number =["Number"]
-var yValues = [2 ,3 ,16];
-var barColors = [
-  "rgba(255,0,0,1.0)",
-  "rgba(255,0,0,0.8)",
-  "rgba(255,0,0,0.6)",
-  "rgba(255,0,0,0.4)",
-  "rgba(255,0,0,0.2)"
-];
 
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }],
-    }
-  }
-});
-</script>
+<div class="graph">
+  <h2>Bar</h2>
+  <canvas id="myChart" width="10" height="5"></canvas>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
 
             
     

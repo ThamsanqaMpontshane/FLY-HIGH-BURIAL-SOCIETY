@@ -4,6 +4,8 @@ body {
 .graph{
   float:right;
   margin-top: -10%;
+  width:50%;
+  /* max-width:600px */
 }
 entry {
   background-color:white;
