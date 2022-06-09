@@ -234,3 +234,9 @@ color: white;
 .btns a{
     text-decoration: none;
 }
+.discription{
+    text-align: center;
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: row; */
+}
