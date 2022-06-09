@@ -56,7 +56,8 @@ function addEntries(myObject) {
     var id_date = Number(tempDate.getDate());
     var id_month = Number(tempDate.getMonth());
     var id_year = Number(tempDate.getFullYear());
-    var fullDate = id_date + "-" + (id_month + 1) + "-" + id_year;
+    // var fullDate = id_date + "-" + (id_month + 1) + "-" + id_year;
+    var fullDate = id_year + "-" + (id_month + 1) + "-" + id_date;
     // var fullDate=Number(fullDate1)
     
     if (!((tempDate.getYear() == idNumber.toString().substring(0, 2)) && (id_month == idNumber.toString().substring(2, 4) - 1) && (id_date == idNumber.toString().substring(4, 6)))) {
@@ -91,44 +92,30 @@ function addEntries(myObject) {
     // Below one is the single line logic to calculate the no. of years...
     var years = new Date(new Date() - new Date(fullDate)).getFullYear() - 1970;
     
-    // var today = new Date(enteredDate1)
+    var today = new Date();
 
 
-    // var monthPlusThree = moment(today).add(3, "month").startOf("month").format('DD/MMMM/YYYY');
+    var monthPlusThree = moment(today).add(3, "month").startOf("month").format('DD/MMMM/YYYY');
 
 
-    // var monthPlusSix = moment(today).add(6, "month").startOf("month").format('DD/MMMM/YYYY');
+    var monthPlusSix = moment(today).add(6, "month").startOf("month").format('DD/MMMM/YYYY');
 
 
-    // let monthPlusNine = moment(today).add(9, "month").startOf("month").format('DD/MMMM/YYYY');
-    // // console.log(monthPlusNine);
+    var monthPlusNine = moment(today).add(9, "month").startOf("month").format('DD/MMMM/YYYY');
+    
 
-    // let monthPlusTwelve = moment(today).add(12, "month").startOf("month").format('DD/MMMM/YYYY');
-    // // console.log(monthPlusTwelve);
-
-    // if (years > 18) {
-
-    //     var stamp = monthPlusSix;
+    var monthPlusTwelve = moment(today).add(12, "month").startOf("month").format('DD/MMMM/YYYY');
 
 
-    //     //  monthPlusThree;
-    //     //   console.log(stamp);
-    //     // //   return;
-    //     alert(stamp);
-
-
-    // } else if (years > 0) {
-
-
-    //     var stamp = monthPlusThree;
-
-    //     // console.log(stamp1);
-    //     alert(stamp);
-    //     // return;
-
-
-
-    // }
+    if (years > 50) {
+        var stamp = monthPlusTwelve;
+    } else if (years > 40) {
+        var stamp = monthPlusNine;
+    }else if(years >30){
+        var stamp = monthPlusSix;
+    } else if(years > 20){
+        var stamp = monthPlusThree;
+}
 
 
 
@@ -139,10 +126,10 @@ function addEntries(myObject) {
         fullName: Name.value,
         IDnr: idNr.value,
         dob: years,
-        Gender: gender
+        Gender: gender,
+        claimDate:stamp
     };
-    console.log(typeof(years))
-    alert(years);
+    
 
 
     var datasets = Object.values(myObject)
@@ -165,14 +152,7 @@ function addEntries(myObject) {
 
     }
 
-    // if (!existingEntries.includes(entry)){
-    //     existingEntries.push(entry)
-
-    //   } 
-
-
-
-    //   return results;
+    
 
 
 
@@ -180,43 +160,9 @@ function addEntries(myObject) {
 
     // alert("hh")
     localStorage.setItem("allEntries", JSON.stringify(existingEntries));
-    // Get the modal
-// var modal = document.getElementById("myModal");
-
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+  
 
 
-}
-
-// displayBenificiaries.innerHTML = Object.values(existingEntries).join(" ");
-
-
-
-
-
-
-// addBtn.addEventListener("click", function () {
 
 
 
@@ -224,81 +170,7 @@ function addEntries(myObject) {
 
 
 
-//     var enteredDate = dob.value;
-//     var enteredDate1 = todayTxt.value;
-//     // Below one is the single line logic to calculate the no. of years...
-//     var years = new Date(new Date() - new Date(enteredDate)).getFullYear() - 1970;
-//     var today = new Date(enteredDate1)
-
-
-//     // let monthPlusThree = moment(today).add(3, "month").startOf("month").format('DD/MMMM/YYYY');
-
-
-//     // let monthPlusSix = moment(today).add(6, "month").startOf("month").format('DD/MMMM/YYYY');
-
-
-//     // let monthPlusNine = moment(today).add(9, "month").startOf("month").format('DD/MMMM/YYYY');
-//     // // console.log(monthPlusNine);
-
-//     // let monthPlusTwelve = moment(today).add(12, "month").startOf("month").format('DD/MMMM/YYYY');
-//     // // console.log(monthPlusTwelve);
-
-
-
-//     if (existingEntries == null) existingEntries = [];
-
-//     var entry = {
-//         name: Name.value,
-//         surname: surname.value,
-//         IDnr: Number(idNr.value),
-//         dob: years
-//         // "Gender": c
-//     };
-
-//     if (!existingEntries.includes(entry["name"])){
-//         existingEntries.push(entry)
-
-//       } 
-
-
-
-// //   return results;
-
-
-//     // if (entry.dob >= 18 || entry.dob <= 30) {
-
-
-//     //         stamp = monthPlusThree;
-//     //           console.log(stamp);
-//     //           return;
-
-
-//     // } 
-//     // if (entry.dob >= 31 || entry.dob <= 40) {
-
-
-//     //     stamp1 = monthPlusSix;
-
-//     //     console.log(stamp1);
-//     //     return;
-
-
-
-//     // }
-
-
-//     if (entry !== "") {
-//         const newEntry = document.createElement("entry");
-//         newEntry.innerHTML = entry.name + "--" + entry.surname + "--" + entry.IDnr + "--" + entry.dob;
-//         // newEntry.textContent = Object.values(entry).join(" ");
-//         displayBenificiaries.appendChild(newEntry)
-//         localStorage.setItem("allEntries", JSON.stringify(existingEntries));
-
-//     }
-//     // alert("hh")S
-
-
-// })
+}
 
 
 
