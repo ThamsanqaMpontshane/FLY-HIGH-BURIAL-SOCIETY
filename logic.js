@@ -219,3 +219,58 @@ function addEntries(myObject) {
 //         }
 //     ]
 // }
+
+// function Graph(itemList){
+//     var count1 = 0 ;
+//     var count2 = 0 ;
+//     var count3 = 0 ;
+//     var itemList = [
+//       {name : 'Sapho', age : 40},
+//       {name : 'Thami', age : 20},
+//       {name : 'Kamva', age : 23},
+//       {name : 'Thanos', age : 37},
+//       {name : 'Thanos', age : 19},
+//       {name : 'Thanos', age : 17},
+//        {name : 'Thanos', age : 6},
+//        {name : 'Thanos', age : 9}
+//   ];
+    
+//     var results=[];
+//     var data=[];
+//       for(var i=0; i < itemList.length; i++) {
+//         var item = itemList[i];
+//         if (item.age >= 30) {
+//           count1++;
+//           results.push(item);
+//           // data.push(count1);
+//         }else if(item.age >= 20){
+//           count2++
+//           results.push(item);
+//            // data.push(count2);
+          
+//         }else if(item.age > 0){
+//           count3++
+//           results.push(item);
+//           // data.push(count3);
+          
+          
+//         }
+//       }
+//              data.push(count2);
+//             data.push(count3);
+//             data.push(count1);
+  
+//     console.log(data);
+//     console.log(count1);
+//     console.log(count2);
+//     console.log(count3);
+//       return results
+//     return data;
+    
+//   } 
+//   console.log(Graph());
+  
+    
+  
+  
+  
