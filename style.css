@@ -72,11 +72,6 @@ th {
     border-radius: 100px;
 }
 
-.styled-table tbody tr {
-  background-color: rgb(40, 90, 44);
-  /* border-bottom: 1px solid #457b9d; */
-}
-
 table,
 th,
 tr,
@@ -97,6 +92,8 @@ th {
 }
 td{
     text-align: center;
+    color:black;
+    background-color: white;
 }
 
 .menu {
@@ -140,9 +137,16 @@ h2 {
 }
 h1 {
   text-align: center;
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 44px;
 }
 h4{
     text-align: center;
+}
+h3{
+  font-size: 25px;
+  opacity: 0.6;
 }
 .container {
   width: 100%;
@@ -237,6 +241,7 @@ color: white;
 .discription{
     text-align: center;
     margin-top: 10px;
+    font-size: 13px;
     /* display: flex;
     flex-direction: row; */
 }
