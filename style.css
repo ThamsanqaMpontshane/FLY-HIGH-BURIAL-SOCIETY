@@ -69,7 +69,8 @@ th {
   padding: 12px 15px;
 }
 .persona{
-    border-radius: 100px;
+    border-radius: 10px;
+    border: #3f5a36 3px solid;
 }
 
 table,
@@ -138,8 +139,9 @@ h2 {
 h1 {
   text-align: center;
   margin: 0;
-  font-family: 'Caveat', cursive;
+  font-family: 'Joan', serif;
   font-size: 44px;
+  /* color: red; */
 }
 h4{
     text-align: center;
@@ -219,11 +221,11 @@ h3{
     text-align: center;
 }
 .btn{
-    text-align: center;
-background-color: #3f5a36;
-padding: 10px 20px;
-border-radius: 5px;
-color: white;
+  margin-left: 28px;
+  height: 26px;
+  padding-bottom: 0px;
+  color: white;
+  background-color: ;
 }
 .button{
 background-color: rgb(27, 114, 85);
@@ -244,4 +246,14 @@ color: white;
     font-size: 13px;
     /* display: flex;
     flex-direction: row; */
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+  }
+  .page{
+      width: 100%;
+  }
 }
